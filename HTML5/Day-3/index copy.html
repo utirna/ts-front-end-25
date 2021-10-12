@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day-2</title>
+  </head>
+  <body>
+    <h3>Student Registration</h3>
+    <form>
+      <div>
+        <label for="username">Name</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Enter Your Name"
+          title="This must be a student name"
+          value=""
+        />
+      </div>
+      <div>
+        <label for="">Last Name</label>
+        <input type="text" placeholder="Enter Last Name" />
+      </div>
+      <div>
+        <label for="">Email Id</label>
+        <input type="email" placeholder="eg. abc@xyz.pq" />
+      </div>
+      <div>
+        <label for="">DOB</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label for="">Gender</label>
+        <div>
+          <label for="gender-male">Male</label>
+          <input id="gender-male" type="radio" value="male" />
+
+          <label for="">Female</label>
+          <input type="radio" value="female" />
+          <label for="">Other</label>
+          <input type="radio" value="other" />
+        </div>
+      </div>
+      <div>
+        <label for="">Interest Of Area</label>
+        <div>
+          <label for="">HTML5</label>
+          <input type="checkbox" checked disabled />
+
+          <label for="ioa-css">CSS-3</label>
+          <input id="ioa-css" type="checkbox" checked />
+
+          <label for="">JS (ES5)</label>
+          <input type="checkbox" />
+
+          <label for="">JS (ES6/2015)</label>
+          <input type="checkbox" />
+        </div>
+      </div>
+      <div>
+        <label for="">Select Your Current Class</label>
+        <select name="currentClass" id="">
+          <option value="-1">--- Select ---</option>
+          <optgroup label="SSC">
+            <option value="9">09th</option>
+            <option value="10">10th</option>
+          </optgroup>
+          <optgroup label="HSC">
+            <option value="11">11th</option>
+            <option value="12">12th</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="">Address</label>
+        <textarea cols="40" rows="3">Nashik</textarea>
+      </div>
+      <div>
+        <input type="reset" value="Clear" />
+        <button>Submit</button>
+        <input type="file" multiple />
+      </div>
+      <div>
+        <label for="">Select Your Current Class</label>
+        <input type="text" list="currentClass" />
+        <datalist name="currentClass" id="currentClass">
+          <option>09th</option>
+          <option>10th</option>
+          <option>11th</option>
+          <option>12th</option>
+        </datalist>
+      </div>
+    </form>
+  </body>
+</html>
